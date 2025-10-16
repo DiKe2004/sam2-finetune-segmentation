@@ -1,0 +1,46 @@
+your-repo/
+├─ README.md
+├─ LICENSE                      # e.g., MIT (recommended)
+├─ CITATION.cff
+├─ CONTRIBUTING.md
+├─ CODE_OF_CONDUCT.md
+├─ SECURITY.md
+├─ .gitignore
+├─ requirements.txt
+├─ environment.yml
+├─ setup.cfg                    # optional (flake8/ruff/pytest config)
+├─ pyproject.toml               # optional if you want `pip install -e .`
+├─ Makefile                     # handy shortcuts (see below)
+│
+├─ sam2/                        # the SAM2 library (installed in editable mode)
+│  ├─ sam2/                     # (the package)
+│  ├─ configs/
+│  │  └─ sam2.1/
+│  │     ├─ sam2.1_hiera_t.yaml
+│  │     ├─ sam2.1_hiera_s.yaml
+│  │     ├─ sam2.1_hiera_l.yaml
+│  │     └─ sam2.1_hiera_b+.yaml
+│  └─ training/                 # (only if you fine-tune here)
+│
+├─ scripts/
+│  ├─ train.yaml                # Hydra config for your training
+│  ├─ train.py                  # thin wrapper calling sam2/training/train.py
+│  ├─ infer_sam2_local_auto.py  # automatic mask gen w/ rainbow overlay
+│  └─ infer_sam2_local.py       # point-prompt inference (optional)
+│
+├─ checkpoints/
+│  ├─ sam2.1_hiera_tiny.pt
+│  ├─ sam2.1_hiera_base_plus.pt
+│  └─ finetuned_bookshelf.pt
+│
+├─ data/
+│  └─ bookshelf/                # your dataset (not committed if large)
+│     ├─ train/images/*.jpg
+│     ├─ train/masks/*.png
+│     ├─ valid/images/*.jpg
+│     └─ valid/masks/*.png
+│
+└─ docs/
+   ├─ sample_overlay.png
+   ├─ samples.md
+   └─ figures/
