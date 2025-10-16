@@ -1,5 +1,3 @@
-Here you go — a single, copy-pasteable `README.md` that includes everything (overview, setup, training/inference, troubleshooting, plus embedded Contributing, Code of Conduct, and Security sections). You can tweak names/paths/emails and push it as-is.
-
 ````markdown
 # Bookshelf-SAM2: Lightweight SAM 2 Segmentation for Bookshelves
 
