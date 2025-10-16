@@ -10,7 +10,7 @@ This repo includes:
 - Minimal fine-tuning workflow on your own masks
 - Reproducible environment hints (CUDA/PyTorch)
 
-> Works on RTX 4070 (8GB) with PyTorch CUDA builds.
+> Works on RTX A5000 (24GB) with PyTorch CUDA builds.
 
 ---
 
