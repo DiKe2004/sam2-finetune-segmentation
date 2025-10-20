@@ -61,13 +61,7 @@ python infer_sam2_local_auto.py \
   --save-overlay
 ```
 
-## 5) Common Gotchas
-
-* **Hydra “MissingConfig”**: the `--model_cfg` path must be a **valid** SAM2 YAML (relative to the `sam2` package).
-* **CUDA errors**: match PyTorch + CUDA build; free VRAM (close browsers, viewers).
-* **Import error (shadowing)**: run scripts **outside** the `sam2/` parent folder after `pip install -e sam2/`.
-
-## 6) Repo Layout (minimal)
+## 5) Repo Layout (minimal)
 
 ```
 .
@@ -76,7 +70,7 @@ python infer_sam2_local_auto.py \
 └── (your) sam2/               # installed SAM2 source (facebookresearch/sam2)
 ```
 
-## 7) License
+## 6) License
 
 This repo’s code: MIT.
 SAM2 is by Meta; follow their license in `sam2/`.
