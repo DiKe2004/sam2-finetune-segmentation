@@ -81,11 +81,6 @@ python infer_sam2_local_auto.py \
 This repo’s code: MIT.
 SAM2 is by Meta; follow their license in `sam2/`.
 
----
-
-want me to also drop in the tiny `infer_sam2_local_auto.py` I customized for rainbow overlays?
-
-
 CUDA errors: match PyTorch + CUDA build; free VRAM (close browsers, viewers).
 
 Import error (shadowing): run scripts outside the sam2/ parent folder after pip install -e sam2/.
