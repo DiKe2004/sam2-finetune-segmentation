@@ -3,7 +3,7 @@
 Lightweight repo to run Segment Anything 2 (SAM2) for bookshelf/object segmentation on your own images.
 Includes colored instance overlays so you can see each segmented object clearly.
 
-1) Setup (Conda, Python 3.10)
+# 1) Setup (Conda, Python 3.10)
 #create env
 conda create -n sam2ocr python=3.10 -y
 conda activate sam2ocr
@@ -21,7 +21,7 @@ pip install opencv-python-headless matplotlib tqdm numpy hydra-core
 
 Tip: verify GPU with python -c "import torch; print(torch.cuda.is_available())".
 
-2) Files You Need
+# 2) Files You Need
 
 Checkpoint: e.g. sam2_hiera_tiny.pt (or your fine-tuned .pt in sam2_logs/.../checkpoints/last.ckpt)
 
@@ -42,7 +42,13 @@ python infer_sam2_local_auto.py \
 Outputs:
 
 out/masks/*.png — merged binary masks
-
 out/overlays/*_overlay.png — original image with rainbow instance colors
-
 out/meta/*.json — small metadata (counts, etc.)
+
+# 5) Common Gotchas
+
+Hydra “MissingConfig”: the --model_cfg path must be a valid SAM2 YAML (relative to the sam2 package).
+
+CUDA errors: match PyTorch + CUDA build; free VRAM (close browsers, viewers).
+
+Import error (shadowing): run scripts outside the sam2/ parent folder after pip install -e sam2/.
