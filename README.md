@@ -1,7 +1,6 @@
 # SAM2 Bookshelf Segmentation (Simple)
 
-Lightweight repo to run **Segment Anything 2 (SAM2)** for bookshelf/object segmentation on your own images.
-Includes **colored instance overlays** so you can see each segmented object clearly.
+Scripts for running **Segment Anything 2 (SAM2)** on your own images to segment books/objects and export colored instance overlays (each object gets a unique color). Works with SAM2/SAM2.1 configs and supports both automatic and point-prompt modes for quick experiments or more control. Includes a simple CLI for batch processing folders, saving masks/overlays/metadata, and using your own fine-tuned checkpoints.
 
 ## 1) Setup (Conda, Python 3.10)
 
