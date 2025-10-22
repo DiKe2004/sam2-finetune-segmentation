@@ -34,17 +34,6 @@ Outputs:
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/ed03d05d-1df2-4dfb-aae1-9cd5706d4622" />
 
-
-
-## Repo Layout (minimal)
-
-```
-.
-├── infer_sam2_local_auto.py   # simple CLI for auto/points with colored overlays
-├── README.md
-└── (your) sam2/               # installed SAM2 source (facebookresearch/sam2)
-```
-
 ## License
 
 This repo’s code: MIT.
