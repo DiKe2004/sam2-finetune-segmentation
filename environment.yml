@@ -1,0 +1,23 @@
+name: sam2ocr (example)
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  # GPU-enabled PyTorch (CUDA 12.1 toolchain)
+  - pytorch>=2.3
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1  # pulls CUDA runtime from nvidia channel
+  - pip
+  - pip:
+      - -e ./sam2                     # SAM2 local clone (editable)
+      - opencv-python-headless==4.10.0.84
+      - hydra-core>=1.3
+      - matplotlib>=3.7
+      - numpy>=1.23
+      - tqdm>=4.66
+      - pillow>=10.0
+      - pyyaml>=6.0
