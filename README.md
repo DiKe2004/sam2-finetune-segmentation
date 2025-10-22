@@ -1,6 +1,8 @@
 # SAM2 Object & Instance Segmentation
 
 Scripts for running **Segment Anything 2 (SAM2)** on your own images to segment books/objects and export colored instance overlays (each object gets a unique color). Works with SAM2/SAM2.1 configs and supports both automatic and point-prompt modes for quick experiments or more control. Includes a simple CLI for batch processing folders, saving masks/overlays/metadata, and using your own fine-tuned checkpoints.
+<img width="1762" height="444" alt="image" src="https://github.com/user-attachments/assets/cddc9369-f8d8-4c52-8279-23d56d0e786a" />
+
 
 ## Installation 
 
