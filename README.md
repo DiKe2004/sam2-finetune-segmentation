@@ -32,6 +32,8 @@ Outputs:
 * `out/overlays/*_overlay.png` — original image with **rainbow** instance colors
 * `out/meta/*.json` — small metadata (counts, etc.)
 
+![Uploading 20250915_153254_jpg_rf_01bf7636f1be16597506ce1c660f344f_1_overlay.png…]()
+
 
 ## Repo Layout (minimal)
 
