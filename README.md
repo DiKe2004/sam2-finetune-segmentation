@@ -32,7 +32,8 @@ Outputs:
 * `out/overlays/*_overlay.png` — original image with **rainbow** instance colors
 * `out/meta/*.json` — small metadata (counts, etc.)
 
-(https://github.com/DiKe2004/sam2-finetune-segmentation/blob/main/example/outputs%20/Book%20Segmentation.png)
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/ed03d05d-1df2-4dfb-aae1-9cd5706d4622" />
+
 
 
 ## Repo Layout (minimal)
