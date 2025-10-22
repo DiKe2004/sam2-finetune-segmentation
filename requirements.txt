@@ -1,0 +1,11 @@
+# Core
+hydra-core>=1.3
+opencv-python-headless==4.10.0.84
+matplotlib>=3.7
+numpy>=1.23
+tqdm>=4.66
+pillow>=10.0
+pyyaml>=6.0
+
+# Install SAM2 from your local clone in editable mode:
+#   pip install -e ./sam2
